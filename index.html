@@ -1,30 +1,687 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="no-js">
 	<head>
-		<title>Helmi test</title>
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+		
+		<title>Khidmat Pembangunan Aplikasi Web Digital</title>
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="author" content="Mohd Helmi bin Aziz (elmyrockers@gmail.com)" />
+
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+		<link rel="stylesheet" href="css/normalize.css" type="text/css">
+		<link rel="stylesheet" href="css/animate.css" type="text/css">
+		<link rel="stylesheet" href="css/transition-animations.css" type="text/css">
+		<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" type="text/css">
+		<link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+		<link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+		<link rel="stylesheet" href="css/main-blue.css" type="text/css">
+
+		<script src="js/jquery-2.1.3.min.js"></script>
+		<script src="js/modernizr.custom.js"></script>
 	</head>
+
 	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Mohd Helmi!</h1>
-				<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
-        		<li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
-			</ul>
-		</footer>
+		<!-- Loading animation -->
+		<div class="preloader">
+			<div class="preloader-animation">
+				<div class="dot1"></div>
+				<div class="dot2"></div>
+			</div>
+		</div>
+		<!-- /Loading animation -->
+
+		<div id="page" class="page template-style-dark">
+			<!-- Header -->
+			<header id="site_header" class="header mobile-menu-hide header-color-dark">
+				<div class="my-photo tilt-effect"><img src="images/my-photo-thumbnail.jpg" alt="image"></div>
+				<div class="site-title-block"><h1 class="site-title">Mohd Helmi</h1></div>
+
+				<!-- Navigation -->
+				<div class="site-nav">
+			  		<!-- Main menu -->
+					<ul id="nav" class="site-main-menu">
+						<li><a class="pt-trigger" href="#home" data-animation="21"><i class="menu-icon pe-7s-icon pe-7s-home"></i>Laman Utama</a></li><!-- href value = data-id without # of .pt-page. -->
+						<li><a class="pt-trigger" href="#about_me" data-animation="17"><i class="menu-icon pe-7s-icon pe-7s-user"></i>Profail</a></li>
+						<li><a class="pt-trigger" href="#portfolio" data-animation="19"><i class="menu-icon pe-7s-icon pe-7s-portfolio"></i>Portfolio</a></li>
+						<li><a class="pt-trigger" href="#resume" data-animation="18"><i class="menu-icon pe-7s-icon pe-7s-id"></i>Perkhidmatan</a></li>
+						<li class=""><a class="pt-trigger" href="#contact" data-animation="20"><i class="menu-icon pe-7s-icon pe-7s-mail"></i>Hubungi</a></li>
+					</ul>
+					<!-- /Main menu -->
+				</div>
+				<!-- Navigation -->
+			</header>
+			<!-- /Header -->
+
+			<!-- Mobile Header -->
+			<div class="mobile-header mobile-visible">
+				<div class="mobile-logo-container">
+					<div class="mobile-site-title">Mohd Helmi</div>
+				</div>
+				<a class="menu-toggle mobile-visible"><i class="fa fa-bars"></i></a>
+			</div>
+			<!-- /Mobile Header -->
+
+			<!-- Main Content -->
+			<div id="main" class="site-main">
+				<!-- Page changer wrapper -->
+				<div class="pt-wrapper" style="background-image: url(images/main_bg_light.jpg);">
+					<!-- Subpages -->
+					<div class="subpages">
+						<!-- Home Subpage -->
+						<section class="pt-page pt-page-1 section-without-bg section-paddings-0 table" data-id="home">
+							<div class="section-inner">
+								<div class="home-page-block">
+									<h2>Mohd Helmi</h2>
+									<div class="owl-carousel text-rotation">
+										<div class="item">
+											<p class="home-page-description">Fullstack Web Developer</p>
+										</div>
+										<div class="item">
+											<p class="home-page-description">Computer Programmer</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<!-- End of Home Subpage -->
+
+						<!-- About Me Subpage -->
+						<section class="pt-page pt-page-2" data-id="about_me">
+							<div class="border-block-top-110"></div>
+							<div class="section-inner">
+								<div class="section-title-block">
+									<div class="section-title-wrapper clearfix">
+										<h2 class="section-title">Profail</h2>
+										<h5 class="section-description">Tentang Saya</h5>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 subpage-block">
+										<div class="my-photo-block tilt-effect text-center">
+											<img src="images/my-photo.jpg" alt="" class="img-rounded img-thumbnail">
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+										<h3>Siapakah Saya? <i class="fa fa-hand-o-down"></i></h3>
+										<p>Saya adalah Fullstack Web Developer sepenuh masa yang menyediakan perkhidmatan membangunkan aplikasi web secara bebas.</p>
+										<p>Berbekalkan pengalaman hampir 10 tahun, tanpa mengira sekecil mana, ATAU sebesar mana saiz perniagaan anda, sedia mendengarkan apa jua masalah di samping berusaha menyediakan penyelesaian terbaik untuk keperluan bisnes anda</p>
+										<!-- <p>Dengan berbekalkan pengalaman hampir 10 tahun dalam industri ini, saya sedia menyediakan penyelesaian kepada keperluan perniagaan anda...</p> -->
+										<!-- <p>Setiap web yang dibangunkan difokuskan untuk menjadi mesra enjin carian, responsif, </p> -->
+									</div>
+									<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 subpage-block">
+										<ul class="info-list">
+											<li><span class="title">Nama</span><span class="value">Mohd Helmi Aziz</span></li>
+											<li><span class="title">Umur</span><span class="value">29</span></li>
+											<li><span class="title">Lokasi</span><span class="value">Kuala Lumpur, Malaysia</span></li>
+											<li><span class="title">E-mel</span><span class="value"><a target="_top" href="mailto:elmyrockers@gmail.com">elmyrockers@gmail.com</a></span></li>
+											<li><span class="title">Telefon / SMS</span><span class="value">019-690 4470</span></li>
+											<li><span class="title">Whatsapp</span><span class="value">017-8210 846</span></li>
+										</ul>
+										<ul class="social-links">
+											<!-- Full list of social icons: http://fontawesome.io/icons/#brand -->
+											<li><a class="tip social-button" target="_blank" href="https://www.facebook.com/mie.programmer" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+											<li><a class="tip social-button" target="_blank" href="https://www.instagram.com/elmyrockers/" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+											<!-- <li><a class="tip social-button" href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li> -->
+											<li><a class="tip social-button" href="#" title="Youtube"><i class="fa fa-youtube"></i></a></li>
+											<li><a class="tip social-button" href="https://github.com/elmyrockers" target="_blank" title="Github"><i class="fa fa-github"></i></a></li>
+											<!-- <li><a class="tip social-button" href="#" title="Google Plus"><i class="fa fa-google-plus"></i></a></li> -->
+											
+										</ul>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-sm-4 col-md-4 subpage-block">
+										<div class="block-title">
+											<h3>Bahasa Aturcara</h3>
+										</div>
+										<div class="skills-info">
+											<h4>HTML</h4>
+											<div class="skill-container">
+												<div class="skill-percentage level-9"></div>
+											</div>
+											<h4>CSS</h4>
+											<div class="skill-container">
+												<div class="skill-percentage level-7"></div>
+											</div>
+											<h4>Javascript</h4>
+											<div class="skill-container">
+												<div class="skill-percentage level-9"></div>
+											</div>
+											<h4>PHP</h4>
+											<div class="skill-container">
+												<div class="skill-percentage level-10"></div>
+											</div>
+											<h4>SQL</h4>
+											<div class="skill-container">
+												<div class="skill-percentage level-6"></div>
+											</div>
+											<h4>NodeJS</h4>
+											<div class="skill-container">
+												<div class="skill-percentage level-6"></div>
+											</div>
+											<h4>Python</h4>
+											<div class="skill-container">
+												<div class="skill-percentage level-7"></div>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-4 col-md-4 subpage-block">
+										<div class="block-title">
+											<h3>Library / Framework</h3>
+										</div>
+										<div class="skills-info">
+											<h4>LESS</h4>
+											<div class="skill-container">
+												<div class="skill-percentage level-8"></div>
+											</div>
+											<h4>Bootstrap</h4>
+											<div class="skill-container">
+												<div class="skill-percentage level-8"></div>
+											</div>
+											<h4>jQuery</h4>
+											<div class="skill-container">
+												<div class="skill-percentage level-10"></div>
+											</div>
+											<h4>CodeIgniter</h4>
+											<div class="skill-container">
+												<div class="skill-percentage level-7"></div>
+											</div>
+											<h4>CakePHP 3</h4>
+											<div class="skill-container">
+												<div class="skill-percentage level-10"></div>
+											</div>
+											<h4>Laravel</h4>
+											<div class="skill-container">
+												<div class="skill-percentage level-6"></div>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-4 col-md-4 subpage-block">
+										<div class="block-title">
+											<h3>Lain-Lain</h3>
+										</div>
+										<div class="skills-info">
+											<h4>AJAX & JSON</h4>
+											<div class="skill-container">
+												<div class="skill-percentage level-10"></div>
+											</div>
+											<h4>Rest API</h4>
+											<div class="skill-container">
+												<div class="skill-percentage level-5"></div>
+											</div>
+											<h4>WebSocket</h4>
+											<div class="skill-container">
+												<div class="skill-percentage level-8"></div>
+											</div>
+											<h4>Revision Control (SVN,Git)</h4>
+											<div class="skill-container">
+												<div class="skill-percentage level-8"></div>
+											</div>
+											<h4>SEO</h4>
+											<div class="skill-container">
+												<div class="skill-percentage level-5"></div>
+											</div>
+
+											<h4>GIMP / Adobe Photoshop</h4>
+											<div class="skill-container">
+												<div class="skill-percentage level-4"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-sm-12 col-md-12">
+											<a class="button" href="https://github.com/elmyrockers" target="_blank">Lihat Projek Saya Di Github <i class="fa fa-github"></i></a>
+									</div>
+								</div>
+							</div>
+						</section>
+						<!-- End of About Me Subpage -->
+						
+						<!-- Resume Subpage -->
+						<section class="pt-page pt-page-3" data-id="resume">
+							<div class="border-block-top-110"></div>
+							<div class="section-inner">
+								<div class="section-title-block">
+									<div class="section-title-wrapper">
+										<h2 class="section-title">Perkhidmatan</h2>
+										<h5 class="section-description">Perkhidmatan Yang Ditawarkan</h5>
+									</div>
+								</div>
+
+								<!-- Services block -->
+								<div class="block-title">
+									<h3>Perkhidmatan</h3>
+								</div>
+								<div class="row">
+									<div class="col-sm-6 col-md-3 subpage-block">
+										<div class="service-block">
+											<div class="service-info">
+												<img src="images/service/web_design_icon.png" alt="Responsive Design">
+												<h4>Web Design</h4>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-6 col-md-3 subpage-block">
+										<div class="service-block">
+											<div class="service-info">
+												<img src="images/service/photography_icon.png" alt="Photography">
+												<h4>Photography</h4>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-6 col-md-3 subpage-block">
+										<div class="service-block">
+											<div class="service-info">
+												<img src="images/service/creativity_icon.png" alt="Creativity">
+												<h4>Creativity</h4>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-6 col-md-3 subpage-block">
+										<div class="service-block">
+											<div class="service-info">
+												<img src="images/service/advetising_icon.png" alt="Advetising">
+												<h4>Advertising</h4>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- End of Services block -->
+								<!-- Clients block -->
+								<!-- <div class="block-title">
+									<h3>Clients</h3>
+								</div>
+								<div class="row">
+									<div class="col-sm-4 col-md-2 subpage-block">
+										<div class="client-block">
+											<a href="#" target="_blank"><img src="images/clients/client_1.png" alt="image"></a>
+										</div>
+									</div>
+								</div> -->
+								<!-- End of Clients block -->
+								<!-- Testimonial block -->
+								<!-- <div class="row">
+									<div class="col-sm-12 col-md-12 subpage-block">
+										<div class="block-title">
+											<h3>Testimoni</h3>
+										</div>
+										<div class="testimonials owl-carousel">
+											Testimonial 1
+											<div class="testimonial-item">
+												Testimonial Content
+												<div class="testimonial-content">
+													<div class="testimonial-text">
+														<p>"Phasellus eu nunc tincidunt, ultricies elit vitae, pretium eros. Sed sed ipsum sed massa."</p>
+													</div>
+												</div>
+												/Testimonial Content  
+												Testimonial Author
+												<div class="testimonial-credits">
+													Picture
+													<div class="testimonial-picture">
+														<img src="images/testimonials/testimonial_photo_1.jpg" alt="">
+													</div>
+													/Picture
+													Testimonial author information
+													<div class="testimonial-author-info">
+														<p class="testimonial-author">Maria Richardson</p>
+														<p class="testimonial-firm">Lindsley's Lumber</p>
+													</div>
+												</div>
+												/Testimonial author information
+											</div>
+											End of Testimonial 1
+										</div>
+									</div>
+								</div> -->
+								<!-- End of Testimonial block -->
+								<!-- Fun facts block -->
+								<!-- <div class="block-title">
+									<h3>Fun Facts</h3>
+								</div>
+								<div class="row">
+									<div class="col-sm-6 col-md-3 subpage-block">
+										<div class="fun-fact-block gray-bg tilt-effect">
+											<i class="pe-7s-icon pe-7s-smile"></i>
+											<h4>Happy Clients</h4>
+											<span class="fun-value">1,024</span>
+										</div>
+									</div>
+									<div class="col-sm-6 col-md-3 subpage-block tilt-effect">
+										<div class="fun-fact-block">
+											<i class="pe-7s-icon pe-7s-alarm"></i>
+											<h4>Working Hours</h4>
+											<span class="fun-value">6,256</span>
+										</div>
+									</div>
+									<div class="col-sm-6 col-md-3 subpage-block tilt-effect">
+										<div class="fun-fact-block gray-bg">
+											<i class="pe-7s-icon pe-7s-medal"></i>
+											<h4>Awards Won</h4>
+											<span class="fun-value">21</span>
+										</div>
+									</div>
+									<div class="col-sm-6 col-md-3 subpage-block tilt-effect">
+										<div class="fun-fact-block">
+											<i class="pe-7s-icon pe-7s-coffee"></i>
+											<h4>Coffee Consumed</h4>
+											<span class="fun-value">20,000</span>
+										</div>
+									</div>
+								</div> -->
+								<!-- End of Fun fucts block -->
+
+								<div class="row">
+									<div class="col-sm-12 col-md-12">
+										<a class="button" href="#contact" data-animation="20">Hubungi Saya <i class="fa fa-whatsapp"></i></a>
+									</div>
+								</div>
+							</div>
+						</section>
+						<!-- End Resume Subpage -->
+						
+						<!-- Portfolio Subpage -->
+						<section class="pt-page pt-page-4" data-id="portfolio">
+							<div class="border-block-top-110"></div>
+							<div class="section-inner">
+								<div class="section-title-block">
+									<div class="section-title-wrapper">
+										<h2 class="section-title">Portfolio</h2>
+										<h5 class="section-description">Hasil Kerja Saya</h5>
+									</div>
+								</div>
+								<!-- Portfolio Content -->
+								<div class="portfolio-content">
+									
+									<!-- Portfolio filter -->
+									<ul id="portfolio_filters" class="portfolio-filters">
+										<li class="active">
+											<a class="filter btn btn-sm btn-link active" data-group="all">Semua</a>
+										</li>
+										<li>
+											<a class="filter btn btn-sm btn-link" data-group="media">Laman Web</a>
+										</li>
+										<li>
+											<a class="filter btn btn-sm btn-link" data-group="media">Mobile Apps</a>
+										</li>
+										<li>
+											<a class="filter btn btn-sm btn-link" data-group="media">GUI Apps</a>
+										</li>
+										<li>
+											<a class="filter btn btn-sm btn-link" data-group="illustration">Produk Tutorial</a>
+										</li>
+										<li>
+											<a class="filter btn btn-sm btn-link" data-group="video">Youtube</a>
+										</li>
+									</ul>
+									<!-- End of Portfolio filter -->
+									<!-- Portfolio Grid -->
+									<div id="portfolio_grid" class="portfolio-grid portfolio-masonry masonry-grid-3">
+										<!-- Portfolio Item 1 -->
+										<figure class="item" data-groups='["all", "media"]'>
+											<a class="ajax-page-load" href="portfolio-1.html">
+												<img src="images/portfolio/1.jpg" alt="">
+												<div>
+													<h5 class="name">Project Name</h5>
+													<small>Media</small>
+													<i class="pe-7s-icon pe-7s-display2"></i>
+												</div>
+											</a>
+										</figure>
+										<!-- /Portfolio Item 1 -->
+										<!-- Portfolio Item 2 -->
+										<figure class="item" data-groups='["all", "video"]'>
+											<a href="https://player.vimeo.com/video/97102654?autoplay=1" title="Praesent Dolor Ex" class="lightbox mfp-iframe">
+												<img src="images/portfolio/2.jpg" alt="">
+												<div>
+													<h5 class="name">Project Name</h5>
+													<small>Video</small>
+													<i class="pe-7s-icon pe-7s-video"></i>
+												</div>
+											</a>
+										</figure>
+										<!-- /Portfolio Item 2 -->
+										<!-- Portfolio Item 3 -->
+										<figure class="item" data-groups='["all","illustration"]'>
+											<a href="images/portfolio/full/3.jpg" class="lightbox" title="Duis Eu Eros Viverra">
+												<img src="images/portfolio/3.jpg" alt="">
+												<div>
+													<h5 class="name">Project Name</h5>
+													<small>Illustration</small>
+													<i class="pe-7s-icon pe-7s-photo"></i>
+												</div>
+											</a>
+										</figure>
+										<!-- /Portfolio Item 3 -->
+										<!-- Portfolio Item 4 -->
+										<figure class="item" data-groups='["all", "media"]'>
+											<a class="ajax-page-load" href="portfolio-2.html">
+												<img src="images/portfolio/4.jpg" alt="">
+												<div>
+													<h5 class="name">Project Name</h5>
+													<small>Media</small>
+													<i class="pe-7s-icon pe-7s-display2"></i>
+												</div>
+											</a>
+										</figure>
+										<!-- /Portfolio Item 4 -->
+										<!-- Portfolio Item 5 -->
+										<figure class="item" data-groups='["all", "illustration"]'>
+											<a href="images/portfolio/full/5.jpg" class="lightbox" title="Aliquam Condimentum Magna Rhoncus">
+												<img src="images/portfolio/5.jpg" alt="">
+												<div>
+													<h5 class="name">Project Name</h5>
+													<small>Illustration</small>
+													<i class="pe-7s-icon pe-7s-photo"></i>
+												</div>
+											</a>
+										</figure>
+										<!-- /Portfolio Item 5 -->
+										<!-- Portfolio Item 6 -->
+										<figure class="item" data-groups='["all", "media"]'>
+											<a class="ajax-page-load" href="portfolio-3.html">
+												<img src="images/portfolio/6.jpg" alt="">
+												<div>
+													<h5 class="name">Project Name</h5>
+													<small>Media</small>
+													<i class="pe-7s-icon pe-7s-display2"></i>
+												</div>
+											</a>
+										</figure>
+										<!-- /Portfolio Item 6 -->
+										<!-- Portfolio Item 7 -->
+										<figure class="item" data-groups='["all", "video"]'>
+											<a href="https://player.vimeo.com/video/97102654?autoplay=1" title="Nulla Facilisi" class="lightbox mfp-iframe">
+												<img src="images/portfolio/7.jpg" alt="">
+												<div>
+													<h5 class="name">Project Name</h5>
+													<small>Video</small>
+													<i class="pe-7s-icon pe-7s-video"></i>
+												</div>
+											</a>
+										</figure>
+										<!-- /Portfolio Item 7 -->
+										<!-- Portfolio Item 8 -->
+										<figure class="item" data-groups='["all",  "media"]'>
+											<a class="ajax-page-load" href="portfolio-4.html">
+												<img src="images/portfolio/8.jpg" alt="">
+												<div>
+													<h5 class="name">Project Name</h5>
+													<small>Media</small>
+													<i class="pe-7s-icon pe-7s-display2"></i>
+												</div>
+											</a>
+										</figure>
+										<!-- /Portfolio Item 8 -->
+										<!-- Portfolio Item 9 -->
+										<figure class="item" data-groups='["all","illustration"]'>
+											<a href="images/portfolio/full/9.jpg" class="lightbox" title="Mauris Neque Dolor">
+												<img src="images/portfolio/9.jpg" alt="">
+												<div>
+													<h5 class="name">Project Name</h5>
+													<small>Illustration</small>
+													<i class="pe-7s-icon pe-7s-photo"></i>
+												</div>
+											</a>
+										</figure>
+										<!-- /Portfolio Item 9 -->
+										<!-- Portfolio Item 10 -->
+										<figure class="item" data-groups='["all", "video"]'>
+											<a href="https://player.vimeo.com/video/97102654?autoplay=1" title="Donec Lectus Arcu" class="lightbox mfp-iframe">
+												<img src="images/portfolio/10.jpg" alt="">
+												<div>
+													<h5 class="name">Project Name</h5>
+													<small>Video</small>
+													<i class="pe-7s-icon pe-7s-video"></i>
+												</div>
+											</a>
+										</figure>
+										<!-- /Portfolio Item 10 -->
+										<!-- Portfolio Item 11 -->
+										<figure class="item" data-groups='["all","illustration"]'>
+											<a href="images/portfolio/full/11.jpg" class="lightbox" title="Duis Eu Eros Viverra">
+												<img src="images/portfolio/11.jpg" alt="">
+												<div>
+													<h5 class="name">Project Name</h5>
+													<small>Illustration</small>
+													<i class="pe-7s-icon pe-7s-photo"></i>
+												</div>
+											</a>
+										</figure>
+										<!-- /Portfolio Item 11 -->
+										<!-- Portfolio Item 12 -->
+										<figure class="item" data-groups='["all","media"]'>
+											<a class="ajax-page-load" href="portfolio-5.html">
+												<img src="images/portfolio/12.jpg" alt="">
+												<div>
+													<h5 class="name">Project Name</h5>
+													<small>Media</small>
+													<i class="pe-7s-icon pe-7s-display2"></i>
+												</div>
+											</a>
+										</figure>
+										<!-- /Portfolio Item 12 -->
+									</div>
+									<!-- /Portfolio Grid -->
+								</div>
+								<!-- /Portfolio Content -->
+							</div>
+						</section>
+						<!-- /Portfolio Subpage -->
+						
+						<!-- Contact Subpage -->
+						<section class="pt-page pt-page-5" data-id="contact">
+							<div class="border-block-top-110"></div>
+							<div class="section-inner">
+								<div class="section-title-block">
+									<div class="section-title-wrapper">
+										<h2 class="section-title">Hubungi</h2>
+										<h5 class="section-description">Tempahan / Pertanyaan</h5>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6 col-md-6 subpage-block">
+										<div class="block-title">
+											<h3>Hubungi Saya</h3>
+										</div>
+										<p>Untuk tempahan atau sebarang pertanyaan, anda boleh gunakan borang yang tersedia di sebelah atau terus hubungi saya di talian berikut:</p>
+										<div class="contact-info-block">
+											<div class="ci-icon">
+												<i class="pe-7s-icon pe-7s-call"></i>
+											</div>
+											<div class="ci-text">
+												<h5>019-690 4470 (SMS) / <br>017-8210 846 (Whatsapp)</h5>
+											</div>
+										</div>
+										<div class="contact-info-block">
+											<div class="ci-icon">
+												<i class="pe-7s-icon pe-7s-mail"></i>
+											</div>
+											<div class="ci-text">
+												<h5><a target="_top" href="mailto:elmyrockers@gmail.com">elmyrockers@gmail.com</a></h5>
+											</div>
+										</div>
+										<div class="contact-info-block">
+											<div class="ci-icon">
+												<i class="pe-7s-icon pe-7s-map-marker"></i>
+											</div>
+											<div class="ci-text">
+												<h5>Kuala Lumpur, Malaysia</h5>
+											</div>
+										</div>
+										<div class="contact-info-block">
+											<div class="ci-icon">
+												<i class="pe-7s-icon pe-7s-clock"></i>
+											</div>
+											<div class="ci-text">
+												<h5>10am - 10pm</h5>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-6 col-md-6 subpage-block">
+										<div class="block-title">
+											<h3>Sebarang Pertanyaan?</h3>
+										</div>
+										<form id="contact-form" method="post" action="contact_form/contact_form.php">
+											<div class="messages"></div>
+											<div class="controls">
+												<div class="form-group">
+													<input id="form_name" type="text" name="name" class="form-control" placeholder="Nama" required="required" data-error="Sila masukkan nama anda.">
+													<div class="form-control-border"></div>
+													<i class="form-control-icon pe-7s-user"></i>
+													<div class="help-block with-errors"></div>
+												</div>
+												<div class="form-group">
+													<input id="form_email" type="email" name="email" class="form-control" placeholder="E-mel" required="required" data-error="Pastikan e-mel adalah sah.">
+													<div class="form-control-border"></div>
+													<i class="form-control-icon pe-7s-mail"></i>
+													<div class="help-block with-errors"></div>
+												</div>
+												<div class="form-group">
+													<textarea id="form_message" name="message" class="form-control" placeholder="Mesej" rows="4" required="required" data-error="Sila tinggalkan sebarang mesej."></textarea>
+													<div class="form-control-border"></div>
+													<i class="form-control-icon pe-7s-comment"></i>
+													<div class="help-block with-errors"></div>
+												</div>
+												<button class="button btn-send">Hantar Mesej <i class="fa fa-send"></i></button>
+												<!-- <input type="submit" class="button btn-send" value="Hantar Mesej"> -->
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</section>
+						<!-- End Contact Subpage -->
+					</div>
+				</div>
+				<!-- /Page changer wrapper -->
+			</div>
+			<!-- /Main Content -->
+		</div>
+
+
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/pages-switcher.js"></script>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/validator.js"></script>
+		<script src="js/jquery.shuffle.min.js"></script>
+		<script src="js/masonry.pkgd.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+		<script src="js/tilt.jquery.min.js"></script>
+		<script src="js/jquery.hoverdir.js"></script>
+		<script src="js/main.js"></script>
 	</body>
 </html>
