@@ -1,6 +1,13 @@
 # elmyrockers.github.io
 
+## Authors
 
+- [@elmyrockers](https://www.github.com/elmyrockers)
+
+
+## License
+
+[NO LICENSE](https://choosealicense.com/licenses/no-permission/)
 
 
 # FOR USERS
