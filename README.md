@@ -2,7 +2,7 @@
 
 ## Authors
 
-- [@elmyrockers](https://www.github.com/elmyrockers)
+[@elmyrockers](https://www.github.com/elmyrockers)
 
 
 ## License
