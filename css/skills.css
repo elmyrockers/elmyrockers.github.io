@@ -1,0 +1,37 @@
+
+
+
+
+/********************************************** PENAMBAHAN ****************************************/
+p {font-size: 13px;}
+
+.skill-percentage.level-1 {
+  width: 10%;
+}
+.skill-percentage.level-2 {
+  width: 20%;
+}
+.skill-percentage.level-3 {
+  width: 30%;
+}
+.skill-percentage.level-4 {
+  width: 40%;
+}
+.skill-percentage.level-5 {
+  width: 50%;
+}
+.skill-percentage.level-6 {
+  width: 60%;
+}
+.skill-percentage.level-7 {
+  width: 70%;
+}
+.skill-percentage.level-8 {
+  width: 80%;
+}
+.skill-percentage.level-9 {
+  width: 90%;
+}
+.skill-percentage.level-10 {
+  width: 98%;
+}
