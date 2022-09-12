@@ -40,6 +40,8 @@
                 // var url = "contact_form/contact_form.php";
                 var url = "https://qdermacare.com/elmyrockers.github.io/contact_form.php";
 
+                console.log( $(this).serialize() );
+
                 $.ajax({
                     type: "POST",
                     url: url,
