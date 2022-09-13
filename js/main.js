@@ -64,7 +64,7 @@
 					error: function( request, status, error ) {
 						console.log( status );
 						console.log( error );
-					});
+					}
 				};
 				return false;
 			}
