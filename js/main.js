@@ -61,11 +61,12 @@
 							$('#contact-form')[0].reset();
 						}
 					},
-					error: function( request, status, error ) {
+					error: function( request, status, error )
+					{
 						console.log( status );
 						console.log( error );
 					}
-				};
+				});
 				return false;
 			}
 		});
