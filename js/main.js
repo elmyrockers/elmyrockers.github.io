@@ -60,11 +60,6 @@
 							$('#contact-form').find('.messages').html(alertBox);
 							$('#contact-form')[0].reset();
 						}
-					},
-					error: function( request, status, error )
-					{
-						console.log( status );
-						console.log( error );
 					}
 				});
 				return false;
