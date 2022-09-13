@@ -42,7 +42,7 @@
 
 				console.log( $(this).serialize() );
 
-				$.ajax({
+				aj = $.ajax({
 					type: "POST",
 					url: url,
 					data: $(this).serialize(),
