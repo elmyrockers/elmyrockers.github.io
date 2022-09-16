@@ -253,6 +253,14 @@
 
 		});
 
+		// $(function(){
+			// $(document).ready(function() {
+				$( 'body' ).click(function(){
+					$( '#playAudio' ).get(0).play();
+				});
+			// });
+		// });
+
 	});
 
 })(jQuery);
