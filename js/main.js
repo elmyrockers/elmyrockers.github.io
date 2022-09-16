@@ -255,7 +255,7 @@
 
 		// $(function(){
 			// $(document).ready(function() {
-				$( 'body' ).click(function(){
+				$( 'ul#nav a' ).click(function(){
 					$( '#playAudio' ).get(0).play();
 				});
 			// });
