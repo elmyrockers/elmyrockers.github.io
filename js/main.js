@@ -255,8 +255,30 @@
 
 		// $(function(){
 			// $(document).ready(function() {
+				// var webAudio = new Audio( 'media/8-bit-battle.mp3' );
+				var mouseenterAudio = new Audio( 'media/95DQGMX-kids-game-menu-ui-slide-02.mp3' );
+				var clickAudio = new Audio( 'media/2VJDQSW-ambient-game-menu-resonator-synth-confirm-1.mp3' );
+				var portfolioAudio = new Audio( 'media/QYPSD9X-cartoon-hi-tech-device-notification.mp3' );
+				var photoAudio = new Audio( 'media/QXZ24FL-cartoon-characters-saying-hi-hello.mp3' );
+				function play( audio ) {
+					audio.pause();
+					audio.currentTime = '';
+					audio.play();
+				}
 				$( 'ul#nav a' ).click(function(){
-					$( '#playAudio' ).get(0).play();
+					// var webAudio = $( '#playAudio' ).get(0);
+					play( clickAudio );
+				});
+				$( 'ul#nav li' ).mouseenter(function(){
+					play( mouseenterAudio );
+					// play( clickAudio );
+					console.log( this );
+				});
+				$( 'div#portfolio_grid figure' ).click(function(){
+					play( portfolioAudio );
+				});
+				$( '.my-photo-block' ).mouseenter(function(){
+					play( photoAudio );
 				});
 			// });
 		// });
