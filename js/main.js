@@ -236,6 +236,9 @@
 			callbacks: {
 				markupParse: function(template, values, item) {
 				 values.title = item.el.attr('title');
+				},
+				close:function(){
+					console.log( 'lightbox close' );
 				}
 			},
 		});
@@ -246,7 +249,7 @@
 			mainClass: 'mfp-fade',
 			gallery: {
 				enabled: true
-			},
+			}
 		});
 
 		$('.tilt-effect').tilt({
@@ -255,30 +258,83 @@
 
 		// $(function(){
 			// $(document).ready(function() {
-				// var webAudio = new Audio( 'media/8-bit-battle.mp3' );
+				// var backgroundAudio = new Audio( 'media/8-bit-battle.mp3' );
+
+				var backgroundAudio = new Audio( 'media/RWC6QZU-game-loop.mp3' );
+				// var slideAudio = new Audio( 'media/ENFVGH9-jump-effect-sound-1.mp3' );
+				// var slideAudio = new Audio( 'media/U5SLXCT-digital-sting-glitch.mp3' );
+				// var slideAudio = new Audio( 'media/SAELU8Y-quick-glitch-button.mp3' );
+				var slideAudio = new Audio( 'media/WWVLEYR-robotic-lifeforms-2-computer-tiny-glitch-data-erro.mp3' );
+				var closeSlideAudio = new Audio( 'media/GPU8Q8F-robotic-lifeforms-2-computer-tiny-glitch-data-erro.mp3' );
+				
 				var mouseenterAudio = new Audio( 'media/95DQGMX-kids-game-menu-ui-slide-02.mp3' );
 				var clickAudio = new Audio( 'media/2VJDQSW-ambient-game-menu-resonator-synth-confirm-1.mp3' );
 				var portfolioAudio = new Audio( 'media/QYPSD9X-cartoon-hi-tech-device-notification.mp3' );
-				var photoAudio = new Audio( 'media/QXZ24FL-cartoon-characters-saying-hi-hello.mp3' );
-				function play( audio ) {
+				// var photoAudio = new Audio( 'media/QXZ24FL-cartoon-characters-saying-hi-hello.mp3' );
+				var photoAudio = new Audio( 'media/25FAVEK-cartoon-girl-hi.mp3' );
+				// var takeYourSeatAudio = new Audio( 'media/MLXK5PU-please-take-your-seats.mp3' );
+				var yourAttentionAudio = new Audio( 'media/J34PFTN-announcer-your-attention-please.mp3' );
+				var yourCallAudio = new Audio( 'media/XHEAYT6-voice-clip-50242.mp3' );
+				// var pleaseAudio = new Audio( 'media/2S7TZPV-terrifying-please-no-scream.mp3' );
+				var pleaseAudio = new Audio( 'media/2S7TZPV-terrifying-please-no-scream-short.mp3' );
+				function replay( audio ) {
 					audio.pause();
 					audio.currentTime = '';
 					audio.play();
 				}
-				$( 'ul#nav a' ).click(function(){
-					// var webAudio = $( '#playAudio' ).get(0);
-					play( clickAudio );
+
+				var currentMidiURL = '';
+				var currentMidiDuration = 0;
+				var n = 0;
+				function play_midi_in_loop() {
+					MIDIjs.play( currentMidiURL );
+					setTimeout( play_midi_in_loop, (currentMidiDuration+1)*1000 );
+					n++;
+					console.log( 'test:'+n );
+				}
+				$( 'body' ).click(function(){
+					backgroundAudio.loop = true;
+					backgroundAudio.volume = 0.9;
+					// backgroundAudio.play();
 				});
-				$( 'ul#nav li' ).mouseenter(function(){
-					play( mouseenterAudio );
+
+				$( 'body' ).one('click',(function(){
+					replay( yourAttentionAudio );
+
+					// currentMidiURL = 'media/midi/billie_jean.mid';
+					currentMidiURL = 'media/midi/ninja_gaiden_I-4-2.mid';
+					// currentMidiDuration = 283;
+					currentMidiDuration = 135;
+					play_midi_in_loop();
+				}));
+				$( 'section[data-id=contact]' ).one('mouseenter',(function(){
+					replay( yourCallAudio );
+				}));
+				$( 'ul#nav a' ).click(function(){
+					replay( clickAudio );
+				});
+				$( 'ul#nav li,ul.social-links li,a.button' ).mouseenter(function(){
+					replay( mouseenterAudio );
+				});
+				$( 'a.repo' ).click(function(){
+					replay( pleaseAudio );
 					// play( clickAudio );
-					console.log( this );
+					// console.log( this );
 				});
 				$( 'div#portfolio_grid figure' ).click(function(){
-					play( portfolioAudio );
+					replay( portfolioAudio );
 				});
+				$( 'div#portfolio_grid figure' ).mouseenter(function(){
+					// slideAudio.volume = 1.0;
+					replay( slideAudio );
+				});
+				$( 'button.mfp-close' ).click(function(){
+					console.log( closeSlideAudio );
+					replay( closeSlideAudio );
+				});
+				
 				$( '.my-photo-block' ).mouseenter(function(){
-					play( photoAudio );
+					replay( photoAudio );
 				});
 			// });
 		// });
