@@ -238,7 +238,7 @@
 				 values.title = item.el.attr('title');
 				},
 				close:function(){
-					console.log( 'lightbox close' );
+					// console.log( 'lightbox close' );
 				}
 			},
 		});
@@ -260,12 +260,12 @@
 			// $(document).ready(function() {
 				// var backgroundAudio = new Audio( 'media/8-bit-battle.mp3' );
 
-				var backgroundAudio = new Audio( 'media/RWC6QZU-game-loop.mp3' );
+				// var backgroundAudio = new Audio( 'media/RWC6QZU-game-loop.mp3' );
 				// var slideAudio = new Audio( 'media/ENFVGH9-jump-effect-sound-1.mp3' );
 				// var slideAudio = new Audio( 'media/U5SLXCT-digital-sting-glitch.mp3' );
 				// var slideAudio = new Audio( 'media/SAELU8Y-quick-glitch-button.mp3' );
 				var slideAudio = new Audio( 'media/WWVLEYR-robotic-lifeforms-2-computer-tiny-glitch-data-erro.mp3' );
-				var closeSlideAudio = new Audio( 'media/GPU8Q8F-robotic-lifeforms-2-computer-tiny-glitch-data-erro.mp3' );
+				// var closeSlideAudio = new Audio( 'media/GPU8Q8F-robotic-lifeforms-2-computer-tiny-glitch-data-erro.mp3' );
 				
 				var mouseenterAudio = new Audio( 'media/95DQGMX-kids-game-menu-ui-slide-02.mp3' );
 				var clickAudio = new Audio( 'media/2VJDQSW-ambient-game-menu-resonator-synth-confirm-1.mp3' );
@@ -292,11 +292,11 @@
 					n++;
 					console.log( 'test:'+n );
 				}
-				$( 'body' ).click(function(){
-					backgroundAudio.loop = true;
-					backgroundAudio.volume = 0.9;
-					// backgroundAudio.play();
-				});
+				// $( 'body' ).click(function(){
+				// 	backgroundAudio.loop = true;
+				// 	backgroundAudio.volume = 0.9;
+				// 	// backgroundAudio.play();
+				// });
 
 				$( 'body' ).one('click',(function(){
 					replay( yourAttentionAudio );
@@ -328,10 +328,10 @@
 					// slideAudio.volume = 1.0;
 					replay( slideAudio );
 				});
-				$( 'button.mfp-close' ).click(function(){
-					console.log( closeSlideAudio );
-					replay( closeSlideAudio );
-				});
+				// $( 'button.mfp-close' ).click(function(){
+				// 	console.log( closeSlideAudio );
+				// 	replay( closeSlideAudio );
+				// });
 				
 				$( '.my-photo-block' ).mouseenter(function(){
 					replay( photoAudio );
