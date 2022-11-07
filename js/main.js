@@ -267,8 +267,8 @@
 				var slideAudio = new Audio( 'media/WWVLEYR-robotic-lifeforms-2-computer-tiny-glitch-data-erro.mp3' );
 				// var closeSlideAudio = new Audio( 'media/GPU8Q8F-robotic-lifeforms-2-computer-tiny-glitch-data-erro.mp3' );
 				
-				var mouseenterAudio = new Audio( 'media/95DQGMX-kids-game-menu-ui-slide-02.mp3' );
-				var clickAudio = new Audio( 'media/2VJDQSW-ambient-game-menu-resonator-synth-confirm-1.mp3' );
+				// var mouseenterAudio = new Audio( 'media/95DQGMX-kids-game-menu-ui-slide-02.mp3' );
+				// var clickAudio = new Audio( 'media/2VJDQSW-ambient-game-menu-resonator-synth-confirm-1.mp3' );
 				var portfolioAudio = new Audio( 'media/QYPSD9X-cartoon-hi-tech-device-notification.mp3' );
 				// var photoAudio = new Audio( 'media/QXZ24FL-cartoon-characters-saying-hi-hello.mp3' );
 				var photoAudio = new Audio( 'media/25FAVEK-cartoon-girl-hi.mp3' );
@@ -305,16 +305,18 @@
 					currentMidiURL = 'media/midi/ninja_gaiden_I-4-2.mid';
 					// currentMidiDuration = 283;
 					currentMidiDuration = 135;
-					play_midi_in_loop();
+					// play_midi_in_loop();
 				}));
 				$( 'section[data-id=contact]' ).one('mouseenter',(function(){
 					replay( yourCallAudio );
 				}));
 				$( 'ul#nav a' ).click(function(){
-					replay( clickAudio );
+					// replay( clickAudio );
+					replay( portfolioAudio );
 				});
 				$( 'ul#nav li,ul.social-links li,a.button' ).mouseenter(function(){
-					replay( mouseenterAudio );
+					// replay( mouseenterAudio );
+					replay( slideAudio );
 				});
 				$( 'a.repo' ).click(function(){
 					replay( pleaseAudio );
