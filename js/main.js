@@ -271,12 +271,12 @@
 				// var clickAudio = new Audio( 'media/2VJDQSW-ambient-game-menu-resonator-synth-confirm-1.mp3' );
 				var portfolioAudio = new Audio( 'media/QYPSD9X-cartoon-hi-tech-device-notification.mp3' );
 				// var photoAudio = new Audio( 'media/QXZ24FL-cartoon-characters-saying-hi-hello.mp3' );
-				var photoAudio = new Audio( 'media/25FAVEK-cartoon-girl-hi.mp3' );
+				var photoAudio = new Audio( 'media/cartoon_girl_hi.mp3' );
 				// var takeYourSeatAudio = new Audio( 'media/MLXK5PU-please-take-your-seats.mp3' );
-				var yourAttentionAudio = new Audio( 'media/J34PFTN-announcer-your-attention-please.mp3' );
+				var yourAttentionAudio = new Audio( 'media/announcer_saying_your_attention_please_2.mp3' );
 				var yourCallAudio = new Audio( 'media/XHEAYT6-voice-clip-50242.mp3' );
 				// var pleaseAudio = new Audio( 'media/2S7TZPV-terrifying-please-no-scream.mp3' );
-				var pleaseAudio = new Audio( 'media/2S7TZPV-terrifying-please-no-scream-short.mp3' );
+				var pleaseAudio = new Audio( 'media/terrifying_please_no_scream_2.mp3' );
 				function replay( audio ) {
 					audio.pause();
 					audio.currentTime = '';
