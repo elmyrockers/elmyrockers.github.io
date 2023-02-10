@@ -279,6 +279,7 @@
 				var pleaseAudio = new Audio( 'media/terrifying_please_no_scream_2.mp3' );
 				function replay( audio ) {
 					audio.pause();
+					audio.volume = 0.3;
 					audio.currentTime = '';
 					audio.play();
 				}
